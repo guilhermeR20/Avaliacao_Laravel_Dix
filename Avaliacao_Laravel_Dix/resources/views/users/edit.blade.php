@@ -10,7 +10,7 @@
                     </div>
             @endif
             <div class="card-header">
-                <h4 class="card-title">{{ _('Edit User') }}</h4>
+                <h4 class="card-title">{{ __('Edit User') }}</h4>
             </div>
             <form method="post" action="{{ route('user.manager.update', $user->id) }}" autocomplete="off">
                 <div class="card-body">
@@ -20,26 +20,26 @@
                         @include('alerts.success')
 
                         <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
-                            <label>{{ _('Name') }}</label>
-                            <input type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ _('Name') }}" value="{{ $user->name }}">
+                            <label>{{ __('Name') }}</label>
+                            <input type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Name') }}" value="{{ $user->name }}">
                             @include('alerts.feedback', ['field' => 'name'])
                         </div>
 
                         <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
-                            <label>{{ _('Email address') }}</label>
-                            <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Email address') }}" value="{{ $user->email }}">
+                            <label>{{ __('Email address') }}</label>
+                            <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('Email address') }}" value="{{ $user->email }}">
                             @include('alerts.feedback', ['field' => 'email'])
                         </div>
                 </div>
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-fill btn-primary">{{ _('Save') }}</button>
+                    <button type="submit" class="btn btn-fill btn-primary">{{ __('Save') }}</button>
                 </div>
             </form>
         </div>
 
         <div class="card">
             <div class="card-header">
-                <h5 class="title">{{ _('Password') }}</h5>
+                <h5 class="title">{{ __('Password') }}</h5>
             </div>
             <form method="post" action="{{ route('user.password', $user->id) }}" autocomplete="off">
                 <div class="card-body">
@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-fill btn-primary">{{ _('Change password') }}</button>
+                    <button type="submit" class="btn btn-fill btn-primary">{{ __('Change password') }}</button>
                 </div>
             </form>
         </div>
