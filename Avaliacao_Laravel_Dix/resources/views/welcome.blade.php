@@ -6,9 +6,9 @@
             <div class="header-body text-center mb-7">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-6">
-                        <h1 class="text-white">{{ __('Welcome!') }}</h1>
+                        <h1 class="text-primary">{{ __('Bem Vindo') }}</h1>
                         <p class="text-lead text-light">
-                            {{ __('Use White Dashboard theme to create a great project.') }}
+                            {{ __('Projeto de estágio Dix Digital') }}
                         </p>
                     </div>
                 </div>
