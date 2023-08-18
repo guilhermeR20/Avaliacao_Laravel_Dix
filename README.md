@@ -40,4 +40,9 @@ php artisan serve
 > [!NOTE]
 > # 📖 O que foi utilizado para o desenvolvimento deste projeto?
 
+## IDE: **VSCode**
+## Banco de Dados: **MYSQL**
+## Framework: **Laravel**
+## Gerenciador de containers: **Docker + Laradock**
+
 
