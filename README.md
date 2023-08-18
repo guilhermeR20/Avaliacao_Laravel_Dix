@@ -1,6 +1,7 @@
 <h1> Avaliação Estágio Dix Digital </h1>
 
-# Status: Em desenvolvimento ⚠️ (principais funções finalizadas)
+[!WARNING]
+Status: Em desenvolvimento (principais funções finalizadas)
 
 ## Requisitos para instalação do projeto em seu dispositivo:
 
@@ -35,3 +36,8 @@ php artisan serve
 ### Abra um navegador e acesse http://localhost:8000 (ou a URL exibida no terminal após iniciar o servidor). Você deve ver a página inicial do Laravel.
 
 ### O Projeto Laravel está pronto para uso após seguir esses passos. Lembre-se de que esses são os passos básicos para instalação e configuração inicial. 
+
+[!NOTE]
+# 📖 O que foi utilizado para o desenvolvimento deste projeto?
+
+
