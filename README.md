@@ -1,7 +1,7 @@
 <h1> Avaliação Estágio Dix Digital </h1>
 
-[!WARNING]
-Status: Em desenvolvimento (principais funções finalizadas)
+> [!WARNING]
+> Status: Em desenvolvimento (principais funções finalizadas)
 
 ## Requisitos para instalação do projeto em seu dispositivo:
 
