@@ -13,8 +13,8 @@
             </li>
             <li>
                 <a data-toggle="collapse" href="#laravel-examples" aria-expanded="true">
-                    <i class="fab fa-laravel" ></i> 
-                    <span class="nav-link-text" >{{ __('Gerenciamento Usuário') }}</span>
+                    <i class="fas fa-cogs" ></i> 
+                    <span class="nav-link-text" >{{ __('Gerenciar Usuário') }}</span>
                     <b class="caret mt-1"></b>
                 </a>
 
@@ -41,7 +41,7 @@
            
             <li @if ($pageSlug = 'news') class="active " @endif>
                 <a href="{{ route('news.index') }}">
-                    <i class="tim-icons icon-single-copy-04"></i>
+                    <i class="fa fa-newspaper"></i>
                     <p>{{ __('noticias') }}</p>
                 </a>
             </li>

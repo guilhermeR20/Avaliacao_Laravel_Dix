@@ -116,7 +116,7 @@
                                 </li>
                                 <li>
                                     <a data-toggle="collapse" href="#laravel-examples" aria-expanded="true">
-                                        <i class="fab fa-laravel" ></i>
+                                        <i class="fas fa-cogs" ></i>
                                         <span class="nav-link-text" >{{ __('Gerenciar Usuario') }}</span>
                                         <b class="caret mt-1"></b>
                                     </a>
@@ -143,7 +143,7 @@
                                 </li>
                                 <li>
                                     <a href="{{ route('news.index') }}">
-                                        <i class="tim-icons icon-single-copy-04"></i>
+                                        <i class="fa fa-newspaper"></i>
                                         <p>{{ __('Noticias') }}</p>
                                     </a>
                                 </li>
