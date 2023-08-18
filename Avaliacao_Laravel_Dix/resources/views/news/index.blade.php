@@ -52,7 +52,7 @@
 
                 <div class="row">
                     <div class="col-8">
-                        <h4 class="card-title">Suas Noticias</h4>
+                        <h2 class="card-title "><b>Suas Noticias</b></h2>
                     </div>
                     <div class="col-4 text-right">
                         <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalNews">Nova Noticia</a>
