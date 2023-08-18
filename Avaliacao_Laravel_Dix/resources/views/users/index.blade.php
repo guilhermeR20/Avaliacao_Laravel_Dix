@@ -117,7 +117,7 @@
                                 <li>
                                     <a data-toggle="collapse" href="#laravel-examples" aria-expanded="true">
                                         <i class="fab fa-laravel" ></i>
-                                        <span class="nav-link-text" >{{ __('Management') }}</span>
+                                        <span class="nav-link-text" >{{ __('Gerenciar Usuario') }}</span>
                                         <b class="caret mt-1"></b>
                                     </a>
                     
@@ -126,14 +126,14 @@
                                             <li >
                                                 <a href="{{ route('profile.edit')  }}">
                                                     <i class="tim-icons icon-single-02"></i>
-                                                    <p>{{ __('User Profile') }}</p>
+                                                    <p>{{ __('Meu Perfil') }}</p>
                                                 </a>
                                             </li>
                                             @if('manage-users')
                                                 <li class="active" >
                                                     <a href="{{ route('user.index')  }}">
                                                         <i class="tim-icons icon-bullet-list-67"></i>
-                                                        <p>{{ __('User Management') }}</p>
+                                                        <p>{{ __('Gerenciar Perfis') }}</p>
                                                     </a>
                                                 </li>
                                                 
@@ -144,7 +144,7 @@
                                 <li>
                                     <a href="{{ route('news.index') }}">
                                         <i class="tim-icons icon-single-copy-04"></i>
-                                        <p>{{ __('News') }}</p>
+                                        <p>{{ __('Noticias') }}</p>
                                     </a>
                                 </li>
                             </ul>
@@ -171,35 +171,6 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navigation">
                             <ul class="navbar-nav ml-auto">
-                                <li class="search-bar input-group">
-                                    <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split"></i>
-                                        <span class="d-lg-none d-md-block">{{ __('Search') }}</span>
-                                    </button>
-                                </li>
-                                <li class="dropdown nav-item">
-                                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                        <div class="notification d-none d-lg-block d-xl-block"></div>
-                                        <i class="tim-icons icon-sound-wave"></i>
-                                        <p class="d-lg-none"> {{ __('Notifications') }} </p>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
-                                        <li class="nav-link">
-                                            <a href="#" class="nav-item dropdown-item">{{ __('Mike John responded to your email') }}</a>
-                                        </li>
-                                        <li class="nav-link">
-                                            <a href="#" class="nav-item dropdown-item">{{ __('You have 5 more tasks') }}</a>
-                                        </li>
-                                        <li class="nav-link">
-                                            <a href="#" class="nav-item dropdown-item">{{ __('Your friend Michael is in town') }}</a>
-                                        </li>
-                                        <li class="nav-link">
-                                            <a href="#" class="nav-item dropdown-item">{{ __('Another notification') }}</a>
-                                        </li>
-                                        <li class="nav-link">
-                                            <a href="#" class="nav-item dropdown-item">{{ __('Another one') }}</a>
-                                        </li>
-                                    </ul>
-                                </li>
                                 <li class="dropdown nav-item">
                                     <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                                         <div class="photo">
@@ -210,10 +181,13 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-navbar">
                                         <li class="nav-link">
-                                            <a href="{{ route('profile.edit') }}" class="nav-item dropdown-item">{{ __('Profile') }}</a>
+                                            <a href="{{ route('profile.edit') }}" class="nav-item dropdown-item">{{ __('Meu Perfil') }}</a>
                                         </li>
                                         <li class="nav-link">
-                                            <a href="#" class="nav-item dropdown-item">{{ __('Settings') }}</a>
+                                            <a href="{{ route('news.index') }}" class="nav-item dropdown-item">{{ __('Minhas Noticias') }}</a>
+                                        </li>
+                                        <li class="nav-link">
+                                            <a href="#" class="nav-item dropdown-item">{{ __('Configurações') }}</a>
                                         </li>
                                         <li class="dropdown-divider"></li>
                                         <li class="nav-link">
@@ -290,10 +264,10 @@
 
                 <div class="row">
                     <div class="col-8">
-                        <h4 class="card-title">Users</h4>
+                        <h4 class="card-title">Usuarios</h4>
                     </div>
                     <div class="col-4 text-right">
-                        <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Add user</a>
+                        <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Adicionar Usuario</a>
                     </div>
                 </div>
             </div>
@@ -302,9 +276,9 @@
                 <div class="">
                     <table class="table tablesorter " id="">
                         <thead class=" text-primary">
-                            <tr><th scope="col">Name</th>
+                            <tr><th scope="col">Nome</th>
                             <th scope="col">Email</th>
-                            <th scope="col">Creation Date</th>
+                            <th scope="col">Data de Criação</th>
                             <th scope="col"></th>
                         </tr></thead>
                         <tbody>
@@ -322,8 +296,8 @@
                                             <i class="fas fa-ellipsis-v"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                            <a class="dropdown-item" href="{{ route('user.edit', $user->id) }} ">Edit</a>
-                                            <a class="dropdown-item"  href="{{ route('user.delete', $user->id) }}">delete</a>
+                                            <a class="dropdown-item" href="{{ route('user.edit', $user->id) }} ">Editar</a>
+                                            <a class="dropdown-item"  href="{{ route('user.delete', $user->id) }}">Apagar</a>
                                         </div>
                                     </div>
                                 </td>
@@ -365,7 +339,7 @@
   <form class="form" method="post" action="{{ route('user.register') }}">
     @csrf
       <div class="form-group">
-        <label for="name">Name</label>
+        <label for="name">Nome</label>
         <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" placeholder="Full name">
       </div>
 
@@ -375,12 +349,12 @@
       </div>
 
       <div class="form-group">
-        <label for="password">Password</label>
+        <label for="password">Senha</label>
         <input type="password" class="form-control" id="password" name="password" placeholder="Password">
       </div>
 
       <div class="form-group">
-        <label>Confirm Password</label>
+        <label>Nova Senha</label>
         <input type="password" name="password_confirmation" class="form-control" placeholder="{{ __('Confirm New Password') }}" value="">
     </div>
       
@@ -390,8 +364,8 @@
 
 </div>
 <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-    <button type="submit" class="btn btn-primary">Add User</button>
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    <button type="submit" class="btn btn-primary">Adicionar Usuario</button>
 </div>
 </form>
     </div>
@@ -444,22 +418,7 @@
             </a>
             <ul class="dropdown-menu">
             <li class="header-title"> Sidebar Background</li>
-            <li class="adjustments-line">
-                <a href="javascript:void(0)" class="switch-trigger background-color">
-                <div class="badge-colors text-center">
-                    <span class="badge filter badge-primary active" data-color="primary"></span>
-                    <span class="badge filter badge-info" data-color="blue"></span>
-                    <span class="badge filter badge-success" data-color="green"></span>
-                </div>
-                <div class="clearfix"></div>
-                </a>
-            </li>
-            <li class="button-container">
-                <a href="https://www.creative-tim.com/product/white-dashboard-laravel" target="_blank" class="btn btn-primary btn-block btn-round">Download Now</a>
-                <a href="https://white-dashboard-laravel.creative-tim.com/docs/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block btn-round">
-                Documentation
-                </a>
-            </li>
+
             <li class="header-title">Thank you for 95 shares!</li>
             <li class="button-container text-center">
                 <button id="twitter" class="btn btn-round btn-info"><i class="fab fa-twitter"></i> · 45</button>

@@ -16,9 +16,9 @@
                               <i class="tim-icons icon-zoom-split"></i>
                            </div>      
                          </div>
-                        <input type="text" class="form-control" name="filter" placeholder="enter your search">
+                        <input type="text" class="form-control" name="filter" placeholder="Pesquisar">
                     </div>
-                    <button type="submit" class="btn btn-primary">Filter</button>
+                    <button type="submit" class="btn btn-primary">Filtrar</button>
                     </div>
                 </div>
                 </form>
@@ -52,10 +52,10 @@
 
                 <div class="row">
                     <div class="col-8">
-                        <h4 class="card-title">News</h4>
+                        <h4 class="card-title">Suas Noticias</h4>
                     </div>
                     <div class="col-4 text-right">
-                        <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalNews">Add New</a>
+                        <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalNews">Nova Noticia</a>
                     </div>
                 </div>
             </div>
@@ -64,9 +64,9 @@
                 <div class="">
                     <table class="table tablesorter " id="">
                         <thead class=" text-primary">
-                            <tr><th scope="col">Title</th>
-                            <th scope="col">Desciption</th>
-                            <th scope="col">Creation Date</th>
+                            <tr><th scope="col">Titulo</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">data de criação</th>
                             <th scope="col"></th>
                         </tr></thead>
                         <tbody>
@@ -84,8 +84,8 @@
                                             <i class="fas fa-ellipsis-v"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                            <a class="dropdown-item" href="{{ route('news.edit', $new->id) }}">Edit</a>
-                                            <a class="dropdown-item"  href="{{ route('news.delete', $new->id) }}">delete</a>
+                                            <a class="dropdown-item" href="{{ route('news.edit', $new->id) }}">Editar</a>
+                                            <a class="dropdown-item"  href="{{ route('news.delete', $new->id) }}">Apagar</a>
                                         </div>
                                     </div>
                                 </td>
@@ -118,17 +118,17 @@
     <form class="form" method="post" action="{{ route('news.store') }}">
       @csrf
         <div class="form-group">
-          <label for="title">Title</label>
-          <input type="text" class="form-control" id="title" name="title"  placeholder="title">
+          <label for="title">Titulo</label>
+          <input type="text" class="form-control" id="title" name="title"  placeholder="Titulo">
         </div>
   
         <div class="form-group">
-          <label for="description">Description</label>
-          <input type="text" class="form-control" id="description" name="description"  placeholder="description">
+          <label for="description">Descrição</label>
+          <input type="text" class="form-control" id="description" name="description"  placeholder="Descrição">
         </div>
   
         <div class="form-group">
-          <label for="content">Content</label>
+          <label for="content">Conteudo</label>
           <textarea name="content" id="content" cols="57" rows="10"></textarea>
         </div>
       </div>
@@ -136,8 +136,8 @@
   
   </div>
   <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      <button type="submit" class="btn btn-primary">Add New</button>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      <button type="submit" class="btn btn-primary">Adicionar</button>
   </div>
   </form>
       </div>

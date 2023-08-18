@@ -21,18 +21,18 @@
 
                         <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
                             <label>{{ __('Name') }}</label>
-                            <input type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Name') }}" value="{{ $user->name }}">
+                            <input type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Nome') }}" value="{{ $user->name }}">
                             @include('alerts.feedback', ['field' => 'name'])
                         </div>
 
                         <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
                             <label>{{ __('Email address') }}</label>
-                            <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('Email address') }}" value="{{ $user->email }}">
+                            <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('Endereço de Email') }}" value="{{ $user->email }}">
                             @include('alerts.feedback', ['field' => 'email'])
                         </div>
                 </div>
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-fill btn-primary">{{ __('Save') }}</button>
+                    <button type="submit" class="btn btn-fill btn-primary">{{ __('Salvar') }}</button>
                 </div>
             </form>
         </div>
