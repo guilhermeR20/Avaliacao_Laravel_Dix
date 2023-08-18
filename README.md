@@ -37,7 +37,7 @@ php artisan serve
 
 ### O Projeto Laravel está pronto para uso após seguir esses passos. Lembre-se de que esses são os passos básicos para instalação e configuração inicial. 
 
-[!NOTE]
-# 📖 O que foi utilizado para o desenvolvimento deste projeto?
+> [!NOTE]
+> # 📖 O que foi utilizado para o desenvolvimento deste projeto?
 
 
