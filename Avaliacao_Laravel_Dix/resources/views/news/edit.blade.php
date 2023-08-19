@@ -20,7 +20,7 @@
                         @include('alerts.success')
 
                         <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
-                            <label>{{ __('Title') }}</label>
+                            <label>{{ __('Titulo') }}</label>
                             <input type="text" name="title" class="form-control{{ $errors->has('title') ? ' is-invalid' : '' }}" placeholder="{{ __('Titulo') }}" value="{{ $new->title }}">
                             @include('alerts.feedback', ['field' => 'title'])
                         </div>
