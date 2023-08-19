@@ -21,7 +21,6 @@ class NewsController extends Controller
         }else{
             $news = Notice::where('user_id', '=', auth()->user()->id)->get();
         }
-
         return view('news.index', ['news' => $news]);
     }
 
